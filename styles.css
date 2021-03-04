@@ -2,6 +2,9 @@ html, body{margin:0px; padding:0px;}
 body {
     font-family: 'Bentham', serif;
     font-size: 24px;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
 
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -14,6 +17,7 @@ body {
     100% {
         opacity: 1;
     }
+
 }
 .top-bar {
 
@@ -26,11 +30,13 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
+    flex: 0 0 content;
 }
 .navbar-item {
     padding: 15px;
     color: white;
     font-size: 32px;
+
 }
 .item-2 {
     float: right;
@@ -41,6 +47,8 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    flex: 1 1 0;
+    overflow: scroll;
 
 }
 .name {
@@ -71,13 +79,15 @@ a:link {
     margin: 10px;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    flex: 0 0 content;
+    align-items: flex-end;
     background-color: #2C3E50;
     color: white;
     text-align: center;
+}
+.icons {
+
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 866px) {
