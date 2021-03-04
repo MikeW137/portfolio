@@ -16,7 +16,7 @@ body {
     }
 }
 .top-bar {
-    width: 100%;
+
     background: #2C3E50;
 }
 .container {
@@ -39,6 +39,8 @@ body {
 .main {
     padding: .75em;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 .name {
     font-size: 2em;
@@ -52,10 +54,17 @@ body {
     background: #dedede;
     color: black;
 }
+p {
+    text-align: center;
+}
 
 a {
     color: inherit;
 }
 a:link {
     text-decoration: none;
+}
+.box {
+    width:275px;
+    height: 250px;
 }
