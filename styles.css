@@ -41,6 +41,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+
 }
 .name {
     font-size: 2em;
@@ -68,4 +69,12 @@ a:link {
     width:275px;
     height: 250px;
     margin: 10px;
+}
+
+@media screen and (max-width: 866px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
