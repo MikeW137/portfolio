@@ -79,6 +79,7 @@ a:link {
     margin: 10px;
 }
 .footer {
+    height: 60px;
     flex: 0 0 content;
     align-items: flex-end;
     background-color: #2C3E50;
